@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.card {
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4;
+}

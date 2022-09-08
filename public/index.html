@@ -7,13 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlatziTravel</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="text-3-xl font-bold underline">
-        Hello world!
-    </h1>
-    <div class="w-64 h-64 bg-red-200"></div>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col space-y-96 py-4 items-center absolute">
+                    <input class="w-6/12 text-center rounded-full outline-none p-3 shadow-sm transition-all ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:w-11/12" type="search" id="" placeholder="San Francisco">
+                    <button class="w-auto rounded-full text-xl text-primary font-semibold p-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110">
+                        Explore More 
+                    </button>
+                </div>
+                <div class="w-full h-full bg-cover">
+                    <img src="./img/sanFrancisco.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="recomendadas" class="p-6">
+            <h2 class="text-primary text-3xl text-semibold mb-3">
+                Recomendados
+            </h2>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
+                <div class="card">
+                    <a href="#">
+                        <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/norway.jpeg" alt="">
+                    </a>
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                        <p class="text-bold text-xl">Norway</p>
+                        <p class="text-md">Beautiful landscapes</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/new_york.jpeg" alt="">
+                    <div class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2">
+                        <p class="text-bold text-xl">New York</p>
+                        <p class="text-md">Concrete Jungle</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/yosemite.jpeg" alt="">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                        <p class="text-bold text-xl">Yosemite</p>
+                        <p class="text-md">A break from the world</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/seattle.jpeg" alt="">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                        <p class="text-bold text-xl">Seattle</p>
+                        <p class="text-md">Big City</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/switzerland.jpeg" alt="">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                        <p class="text-bold text-xl">Switzerland</p>
+                        <p class="text-md">Big City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rentas_destacadas"></div>
+    </section>
+
+    <footer></footer>
 </body>
 
 </html>
