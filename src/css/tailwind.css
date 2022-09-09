@@ -6,9 +6,9 @@
 }
 
 .card-title{
-    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
+    @apply text-3xl pt-8 pb-2 font-semibold text-white;
 }
 
 .card-text{
-    @apply text-sm pl-8 text-black mr-24;
+    @apply text-sm pl-8 text-black mr-24 lg:mr-0;
 }
