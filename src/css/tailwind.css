@@ -4,3 +4,11 @@
 .card {
     @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4;
 }
+
+.card-title{
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
+}
+
+.card-text{
+    @apply text-sm pl-8 text-black mr-24;
+}
