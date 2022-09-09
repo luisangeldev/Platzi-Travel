@@ -4,6 +4,10 @@ module.exports = {
         "./public/*.{html,js}",
         "./src/**/*.{html,js}"
     ],
+    purge: [
+        "./public/*.{html,js}",
+    ],
+    darkMode: 'class',
     theme: {
         extend: {
             backgroundImage: {

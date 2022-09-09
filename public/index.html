@@ -14,62 +14,98 @@
     />
 </head>
 
-<body>
-    <nav></nav>
+<body class="font-Montserrat dark:bg-gray-900">
+    <nav class="w-full h-14 hidden bg-white items-center p-4 lg:flex lg:justify-between fixed z-10 dark:bg-gray-800">
+        <div class="h-auto w-auto">
+            <p class="text-xl text-primary font-black dark:text-white">
+                PlatziTravel
+            </p>
+        </div>
+
+        <div class="flex space-x-8 text-primary dark:text-white">
+            <a class="font-bold text-md " href="#home">
+                Inicio
+            </a>
+            <a class="font-bold text-md " href="#recomendados">
+                Recomendados
+            </a>
+            <a class="font-bold text-md " href="#rentas_destacadas">
+                Rentas destacadas
+            </a>
+            <a class="font-bold text-md " href="#faq">
+                FAQ
+            </a>
+            <a class="font-bold text-md " href="#sobre_nosotros">
+                Sobre nosotros
+            </a>
+        </div>
+
+        <div class="flex space-x-4">
+            <a class="w-5 h-5 text-primary dark:text-white" href="#recomendados">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a id="toggleDark" class="w-5 h-5 text-primary" href="#">
+                <i class="fa-solid fa-moon"></i>
+            </a>
+            <a class="w-5 h-5 text-gray-300" href="#home">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
     <section class="w-full h-auto">
 
-        <div id="home">
-            <div class="w-full h-screen lg:h-screen bg-cover bg-no-repeat bg-center lg:flex lg:flex-col lg:items-center  lg:justify-center" style="background-image: url('./img/sanFrancisco.jpeg');">
+        <div id="home" class="h-3/4">
+            <div class="w-full h-full bg-cover bg-center lg:h-full lg:flex lg:flex-col lg:items-center  lg:justify-center" style="background-image: url('./img/sanFranciscoDesktop.jpeg');">
                 <div class="w-full h-auto  py-4 flex flex-col space-y-40 items-center md:pl-20 lg:pl-0 lg:items-start lg:space-y-10 lg:max-w-screen-lg">
                     <input class="w-6/12 mt-16 text-center rounded-full outline-none p-3 shadow-sm transition-all ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:w-11/12 lg:hidden" type="search" id="" placeholder="San Francisco">
                     <h1 class="hidden w-1/3 text-black text-4xl font-semibold lg:mb-8 lg:flex">
                         Find More Locations like this
                     </h1>
-                    <button class="w-auto rounded-full text-xl text-primary font-semibold px-6 py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110">
+                    <button class="w-auto rounded-full text-xl text-primary font-semibold px-6 py-4 bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-110 dark:text-black">
                         Explore More 
                     </button>
                 </div>
             </div>
         </div>
 
-        <div id="recomendadas" class="p-6 flex flex-col">
-            <h2 class="text-primary text-3xl text-semibold mb-3">
+        <div id="recomendados" class="p-6 flex flex-col ">
+            <h2 class="text-primary text-3xl text-semibold mb-3 dark:text-white">
                 Recomendados
             </h2>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 scrollbar-hide dark:text-white">
                 <div class="card">
                     <a href="#">
                         <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/norway.jpeg" alt="">
                     </a>
-                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700">
                         <p class="text-bold text-xl">Norway</p>
                         <p class="text-md">Beautiful landscapes</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card text-terciary dark:text-white dark:bg-gray-800">
                     <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/new_york.jpeg" alt="">
-                    <div class="w-full h-2/5 rounded-b-lg bg-white text-terciary px-4 py-2">
+                    <div class="w-full h-2/5 rounded-b-lg px-4 py-2">
                         <p class="text-bold text-xl">New York</p>
                         <p class="text-md">Concrete Jungle</p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/yosemite.jpeg" alt="">
-                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-700">
                         <p class="text-bold text-xl">Yosemite</p>
                         <p class="text-md">A break from the world</p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/seattle.jpeg" alt="">
-                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-800">
                         <p class="text-bold text-xl">Seattle</p>
                         <p class="text-md">Big City</p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="w-full h-3/5 rounded-t-lg object-cover" src="./img/switzerland.jpeg" alt="">
-                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2">
+                    <div class="w-full h-2/5 rounded-b-lg bg-secondary text-white px-4 py-2 dark:bg-gray-800">
                         <p class="text-bold text-xl">Switzerland</p>
                         <p class="text-md">Big City</p>
                     </div>
@@ -78,7 +114,7 @@
         </div>
 
         <div class="px-6 h-auto w-full flex flex-col" id="rentas_destacadas">
-            <h2 class="text-3xl text-primary font-semibold pb-6 pt-2">
+            <h2 class="text-3xl text-primary font-semibold pb-6 pt-2 dark:text-white">
                 Rentas destacadas
             </h2>
             <div class="w-full h-full space-y-6 lg:h-800 lg:grid lg:grid-cols-3 lg:grid-rows-4 lg:gap-4 lg:space-y-0 lg:text-end">
@@ -111,33 +147,33 @@
 
         <div id="faqs" class="w-full h-auto pb-9">
             <div class="w-full h-full px-6 flex flex-col space-y-4 mt-6">
-                <h2 class="text-3xl text-primary font-semibold">FAQ</h2>
-                <div>
-                    <p class="text-xl font-medium text-primary">
+                <h2 class="text-3xl text-primary font-semibold dark:text-white">FAQ</h2>
+                <div class="text-primary dark:text-white">
+                    <p class="text-xl font-medium">
                         Política de cancelación
                     </p>
                     <p class="text-md pt-2">
                         Para estancias menures a una semana
                     </p>
                 </div>
-                <div>
-                    <p class="text-xl font-medium text-primary">
+                <div class="text-primary dark:text-white">
+                    <p class="text-xl font-medium">
                         Política de cancelación
                     </p>
                     <p class="text-md pt-2">
                         Para estancias menures a una semana
                     </p>
                 </div>
-                <div>
-                    <p class="text-xl font-medium text-primary">
+                <div class="text-primary dark:text-white">
+                    <p class="text-xl font-medium dark:text-white">
                         Política de cancelación
                     </p>
                     <p class="text-md pt-2">
                         Para estancias menures a una semana
                     </p>
                 </div>
-                <div>
-                    <p class="text-xl font-medium text-primary">
+                <div class="text-primary dark:text-white">
+                    <p class="text-xl font-medium dark:text-white">
                         Política de cancelación
                     </p>
                     <p class="text-md pt-2">
@@ -148,8 +184,8 @@
         </div>
     </section>
 
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 mb-16 md:mb-0">
-        <h2 class="text-lg">
+    <footer id="sobre_nosotros" class="w-full h-auto bg-gray-50 p-6 space-y-2 mb-16 md:mb-0">
+        <h2 class="text-lg text-gray-300">
             About us
         </h2>
         <ul class="text-gray-300">
@@ -182,7 +218,7 @@
             </li>
         </ul>
     </footer>
-    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 grid items-center shadow-md md:hidden">
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 grid items-center shadow-md md:hidden dark:bg-gray-700">
         <ul class="text-gray-300 text-xl text-center flex justify-around">
             <li>
                 <a href="#home">
@@ -190,7 +226,7 @@
                 </a>
             </li>
             <li>
-                <a href="#recomendadas">
+                <a href="#recomendados">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </li>
@@ -200,12 +236,26 @@
                 </a>
             </li>
             <li>
-                <a href="#home">
+                <a href="#" id="toggleDarkSm">
                     <i class="fa-solid fa-moon"></i>
                 </a>
             </li>
         </ul>
     </div>
+    <script>
+        const htmlElement = document.querySelector('html')
+        const darkModeButton = document.querySelector('#toggleDark')
+        const darkModeButtonSm = document.querySelector('#toggleDarkSm')
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.contains('dark') ?
+                htmlElement.classList.remove('dark') :
+                htmlElement.classList.add('dark')
+        }
+
+        darkModeButton.addEventListener('click', () => toggleDarkMode())
+        darkModeButtonSm.addEventListener('click', () => toggleDarkMode())
+    </script>
 </body>
 
 </html>
